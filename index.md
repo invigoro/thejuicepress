@@ -11,4 +11,4 @@ This site is published with [GitHub Pages](https://pages.github.com/) and [Jekyl
 ## Next steps
 
 - Tweak site title and description in `_config.yml` if you like.
-- Add more Markdown pages in the repository root (use `layout: page` in the front matter). Use Jekyll’s `site.baseurl` for internal links in layouts or Liquid so navigation works on both `invigoro.github.io/thejuicepress/` and `invigoro.me/thejuicepress/`.
+- Add more Markdown pages in the repository root (use `layout: page` in the front matter). For Liquid-powered navigation, use `site.baseurl` (empty on this subdomain setup).

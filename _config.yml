@@ -5,11 +5,11 @@ title: The Juice Press
 description: >-
   A GitHub Pages site built with Jekyll and Markdown.
 
-# Canonical site URL (used by feeds and SEO). Matches custom domain root.
-# GitHub project URL will be https://invigoro.github.io/thejuicepress/ — same baseurl.
-# Custom URL: https://invigoro.me/thejuicepress/
-url: "https://invigoro.me"
-baseurl: "/thejuicepress"
+# Canonical URL for feeds and SEO. Custom subdomain (site lives at domain root).
+# Project Pages default: https://invigoro.github.io/thejuicepress/ — leave baseurl empty
+# when using a subdomain custom domain so asset paths match thejuicepress.invigoro.me/.
+url: "https://thejuicepress.invigoro.me"
+baseurl: ""
 
 theme: minima
 
