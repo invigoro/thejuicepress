@@ -1,0 +1,30 @@
+# Jekyll configuration for GitHub Pages
+# Docs: https://docs.github.com/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+title: The Juice Press
+description: >-
+  A GitHub Pages site built with Jekyll and Markdown.
+
+# Canonical site URL (used by feeds and SEO). Matches custom domain root.
+# GitHub project URL will be https://invigoro.github.io/thejuicepress/ — same baseurl.
+# Custom URL: https://invigoro.me/thejuicepress/
+url: "https://invigoro.me"
+baseurl: "/thejuicepress"
+
+theme: minima
+
+# Plugins supported on GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Minima skin: classic, dark, solarized-light, solarized-dark
+minima:
+  skin: classic
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
