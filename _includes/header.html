@@ -6,7 +6,7 @@
     {%- assign default_paths = non_quizzes | where_exp: "item", "item.header_exclude != true" | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title site-title-with-logo" rel="author" href="{{ '/' | relative_url }}">
-      <img class="site-logo" src="{{ '/assets/img/orange-logo-2.png' | relative_url }}" alt="" width="180" height="48" decoding="async" />
+      <img class="site-logo" src="{{ '/assets/img/orange-logo-2.png' | relative_url }}" alt="" decoding="async" />
       <span class="site-title-text">{{ site.title | escape }}</span>
     </a>
 

@@ -10,9 +10,12 @@
 }
 
 .site-logo {
+  display: block;
   height: 40px;
   width: auto;
-  display: block;
+  max-width: none;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
 
 @include media-query($on-palm) {
