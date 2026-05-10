@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-Welcome to **The Juice Press** — a satirical news archive.
+Welcome to **The Juice Press** --- the best place to get your daily squeeze.
 
 ## Latest articles
 
