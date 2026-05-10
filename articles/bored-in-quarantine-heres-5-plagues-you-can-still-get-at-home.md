@@ -1,9 +1,11 @@
 ---
-title: "Bored in Quarantine? Here's 5 Plagues You Can Still Get At Home"
+title: Bored in Quarantine? Here's 5 Plagues You Can Still Get At Home
 date: 2020-08-19
 article_id: 3
-author: "Timothy Wells"
-image: "https://www.cdc.gov/museum/timeline/images/sarscov2-illus-1080x600px.jpg"
+author: Timothy Wells
+image: https://www.cdc.gov/museum/timeline/images/sarscov2-illus-1080x600px.jpg
+redirect_from:
+- /articles/nlue2xxsrl/
 ---
 Ugh. Quarantine--we're all pretty sick of it by now. No going to the movies? No haircuts? No public orgies? How are we supposed to stay sane?
 

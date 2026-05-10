@@ -50,15 +50,16 @@ def split_article_row(line: str) -> list[str]:
     return line.split("\t")
 
 
-def slug_from_short_code(short_code: str, title: str, article_id: str) -> str:
-    """Filename slug: prefer short code (already URL-safe), fallback to id."""
-    code = (short_code or "").strip()
-    if re.match(r"^[A-Za-z0-9_-]+$", code):
-        return code.lower()
-    # Fallback: simple slug from title
-    base = title.lower() if title else f"article-{article_id}"
-    base = re.sub(r"[^a-z0-9]+", "-", base).strip("-")
-    return base or f"article-{article_id}"
+def title_to_slug(title: str, article_id: str) -> str:
+    """URL-safe slug from article title (matches published URLs /articles/:basename/)."""
+    t = (title or "").strip().lower()
+    # Normalize curly quotes / apostrophes; strip ASCII quotes for slug (isn't -> isnt)
+    t = t.replace("\u2019", "'").replace("\u2018", "'")
+    t = t.replace("\u201c", '"').replace("\u201d", '"')
+    t = t.replace("'", "").replace('"', "")
+    t = re.sub(r"[^a-z0-9]+", "-", t)
+    t = re.sub(r"-+", "-", t).strip("-")
+    return t or f"article-{article_id}"
 
 
 def strip_noise_tags(soup: BeautifulSoup) -> None:
@@ -241,7 +242,7 @@ def main() -> None:
                 display_title = f"Article {article_id}"
 
         md_body = html_to_markdown(body_html)
-        slug = slug_from_short_code(url_short, display_title, article_id)
+        slug = title_to_slug(display_title, article_id)
         date = parse_iso_datetime(published_on)
         date_str = date.strftime("%Y-%m-%d") if date else None
 

@@ -1,9 +1,11 @@
 ---
-title: "Millions Receive Amber Alert for Nemo in New Multi-Channel Marketing Strategy"
+title: Millions Receive Amber Alert for Nemo in New Multi-Channel Marketing Strategy
 date: 2021-07-21
 article_id: 13
-author: ""
-image: "https://townsquare.media/site/442/files/2012/07/nemo-2.jpg"
+author: ''
+image: https://townsquare.media/site/442/files/2012/07/nemo-2.jpg
+redirect_from:
+- /articles/toozep87ki/
 ---
 Last Thursday, Pixar introduced its bold, new marketing strategy to promote its upcoming *Finding Nemo 2*: sending out an Amber Alert to millions of Americans seeking help finding the titular character.
 

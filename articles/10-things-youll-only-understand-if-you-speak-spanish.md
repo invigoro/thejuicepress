@@ -1,9 +1,11 @@
 ---
-title: "10 Things You'll Only Understand If You Speak Spanish"
+title: 10 Things You'll Only Understand If You Speak Spanish
 date: 2020-09-26
 article_id: 6
-author: "Timothy Wells"
-image: "https://i.natgeofe.com/n/6c02ad5a-977b-4f12-b9c0-02ffb0736e07/metropolitan-cathedral-zocalo-mexico-city.JPG"
+author: Timothy Wells
+image: https://i.natgeofe.com/n/6c02ad5a-977b-4f12-b9c0-02ffb0736e07/metropolitan-cathedral-zocalo-mexico-city.JPG
+redirect_from:
+- /articles/zdf1cbgw2r/
 ---
 You know you're a Spanish speaker if you understand these 10 things!
 
