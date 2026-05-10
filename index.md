@@ -3,8 +3,8 @@ layout: page
 title: ""
 permalink: /
 ---
-# The Juice Press
-Welcome to **The Juice Press** --- here to bring you the daily squeeze.
+<h1 style="text-align:center;">The Juice Press</h1>
+<p style="text-align:center;">Here to bring you the daily squeeze.</p>
 
 ## Latest articles
 
