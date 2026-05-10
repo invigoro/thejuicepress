@@ -3,6 +3,7 @@ title: "Results for \"Kids Pick the President\" Delayed Due to High Volume of Ma
 date: 2020-11-04
 article_id: 12
 author: "Timothy Wells"
+image: "https://www.nickelodeonparents.com/wp-content/uploads/2024/10/KPP_KA3-1200x630.jpg"
 ---
 As the volunteers tally the votes at One Aston Place, Manhattan, one thing is clear with this year's "Kids Pick the President" election: there won't be a winner declared tonight.
 

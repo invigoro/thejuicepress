@@ -3,6 +3,7 @@ title: "Daines and Bullock Unite to Create \"All Steve Senate\""
 date: 2020-11-01
 article_id: 11
 author: "Bryce Brinker"
+image: "https://pbs.twimg.com/profile_images/1289679666266030080/86oOgvXQ_400x400.jpg"
 ---
 Much like birds through the windshields of semi trucks on the interstate, Americans are hurtling through the month of October breathless and twitching! November 3rd is right around the corner and reputable pollsters like Five-Thirty-Eight, Monmouth, and The New York Times have many state senate races as a total tos—up. It seems that we won’t be certain the outcome of who controls the Senate until election night. However, recent developments within the Montanan Senate race have the country reeling.
 
