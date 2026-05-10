@@ -3,34 +3,15 @@
 
 @import "minima";
 
-// Bottom-align logo, title, and nav (Minima defaults center via tall line-height + floats)
-.site-header .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 0.5rem 1.25rem;
-}
-
-.site-header .site-title {
-  float: none;
-  line-height: $base-line-height;
-}
-
-.site-header .site-nav {
-  float: none;
-  line-height: $base-line-height;
-}
-
 .site-title-with-logo {
   display: inline-flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 0.65rem;
 }
 
 .site-logo {
   display: block;
-  height: 60px;
+  height: 40px;
   width: auto;
   max-width: none;
   aspect-ratio: 1 / 1;
