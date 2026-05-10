@@ -5,7 +5,7 @@
       Minima defaults to *all* page paths when header_pages is unset, which lists every article.
       Only non-article pages (and explicit header_pages in _config.yml) belong in the nav.
     {%- endcomment -%}
-    {%- assign default_paths = site.pages | where_exp: "item", "item.article != true" | map: "path" -%}
+    {%- assign default_paths = site.pages | where_exp: "item", "item.article != true and item.header_exclude != true" | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
