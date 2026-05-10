@@ -3,6 +3,24 @@
 
 @import "minima";
 
+.site-title-with-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.site-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+@include media-query($on-palm) {
+  .site-logo {
+    height: 34px;
+  }
+}
+
 .footer-links {
   margin-bottom: 1.5rem;
   font-size: $small-font-size;

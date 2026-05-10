@@ -39,6 +39,20 @@ defaults:
       quiz: true
       header_exclude: true
       permalink: "/quizzes/:basename/"
+  # Listing pages must override folder defaults (quiz/article flags + header_exclude on quizzes)
+  - scope:
+      path: "articles/index.md"
+    values:
+      layout: page
+      article: false
+      permalink: "/articles/"
+  - scope:
+      path: "quizzes/index.md"
+    values:
+      layout: page
+      quiz: false
+      header_exclude: false
+      permalink: "/quizzes/"
 
 exclude:
   - Gemfile
