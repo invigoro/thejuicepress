@@ -61,6 +61,24 @@
     }
   }
 
+  function allQuestionsAnswered(cfg, selections) {
+    for (var i = 0; i < cfg.questions.length; i++) {
+      var qid = cfg.questions[i].id;
+      if (!selections[qid]) return false;
+    }
+    return true;
+  }
+
+  function scrollToFirstUnanswered(questions, selections) {
+    for (var i = 0; i < questions.length; i++) {
+      if (!selections[questions[i].id]) {
+        var node = document.getElementById("quiz-q-" + i);
+        if (node) node.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+    }
+  }
+
   function findResultBySlug(cfg, slug) {
     if (!slug) return null;
     try {
@@ -191,16 +209,19 @@
           });
           b.classList.add("is-selected");
 
-          if (idx < questions.length - 1) {
-            var next = document.getElementById("quiz-q-" + (idx + 1));
-            if (next) {
-              next.scrollIntoView({ behavior: "smooth", block: "start" });
+          if (!allQuestionsAnswered(cfg, selections)) {
+            if (idx < questions.length - 1) {
+              var next = document.getElementById("quiz-q-" + (idx + 1));
+              if (next) next.scrollIntoView({ behavior: "smooth", block: "start" });
+            } else {
+              scrollToFirstUnanswered(questions, selections);
             }
-          } else {
-            var winner = computeWinner(cfg, selections);
-            setHashSlug(winner.slug);
-            renderResult(mount, winner, true);
+            return;
           }
+
+          var winner = computeWinner(cfg, selections);
+          setHashSlug(winner.slug);
+          renderResult(mount, winner, true);
         });
         opts.appendChild(b);
       });
