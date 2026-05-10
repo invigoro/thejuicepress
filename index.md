@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Home
+title: ""
 permalink: /
 ---
-
-Welcome to **The Juice Press** --- the best place to get your daily squeeze.
+# The Juice Press
+Welcome to **The Juice Press** --- here to bring you the daily squeeze.
 
 ## Latest articles
 
