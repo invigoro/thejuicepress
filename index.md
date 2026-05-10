@@ -4,11 +4,18 @@ title: Home
 permalink: /
 ---
 
-Welcome to **The Juice Press**.
+Welcome to **The Juice Press** — a satirical news archive.
 
-This site is published with [GitHub Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/). Edit this page in `index.md` at the root of the repository to change what visitors see first.
+## Articles
 
-## Next steps
-
-- Tweak site title and description in `_config.yml` if you like.
-- Add more Markdown pages in the repository root (use `layout: page` in the front matter). For Liquid-powered navigation, use `site.baseurl` (empty on this subdomain setup).
+<ul class="post-list">
+{% assign article_pages = site.pages | where_exp: "p", "p.path contains 'articles/'" | sort: "date" | reverse %}
+{% for p in article_pages %}
+  <li>
+    <span class="post-meta">{{ p.date | date: "%b %-d, %Y" }}{% assign a = p.author | default: "" | strip %}{% if a != "" %} · By {{ a }}{% endif %}</span>
+    <h3>
+      <a class="post-link" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </h3>
+  </li>
+{% endfor %}
+</ul>

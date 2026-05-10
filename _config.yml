@@ -24,7 +24,17 @@ minima:
 
 markdown: kramdown
 
+defaults:
+  - scope:
+      path: "articles"
+    values:
+      layout: post
+      article: true
+      permalink: "/articles/:basename/"
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - scripts
+  - "*.sql"
