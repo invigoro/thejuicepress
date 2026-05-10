@@ -1,0 +1,15 @@
+---
+---
+
+@import "minima";
+
+.post-cover {
+  margin: 0 0 1.5rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+}

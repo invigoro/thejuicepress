@@ -3,6 +3,7 @@ title: "All that Glitters isn’t Gold"
 date: 2020-10-10
 article_id: 10
 author: "Tyler Weil"
+url: "https://thumbs.dreamstime.com/b/silhouettes-soldiers-stand-field-sunset-wartime-scene-evokes-remembrance-vietnam-war-veterans-military-helicopters-fly-355218692.jpg"
 ---
 On August 9th 2020, while the coronavirus raged through the US, the band Smash Mouth performed at the Sturgis Motorcycle Rally in South Dakota. The band did not perform in masks, and most of their audience was also maskless. After the performance, videos circulated of the band’s lead singer saying “Fuck that Covid Shit.” Now while I'm not here to defend the singer’s irresponsible statements, I would like to point out, should we really be surprised at this? Are we shocked that the band responsible for one of the greatest protest songs of all time would be so cavalier with expressing their views? I am of course referring to their song All Star and its firm stance against the Vietnam War.
 
