@@ -59,3 +59,5 @@ permalink: /
 </ul>
 
 <p><a href="{{ '/quizzes/' | relative_url }}">All quizzes</a></p>
+
+<script src="{{ '/assets/js/home-post-header.js' | relative_url }}" defer></script>
