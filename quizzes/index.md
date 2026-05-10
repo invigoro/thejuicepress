@@ -6,7 +6,7 @@ quiz: false
 ---
 
 <ul class="post-list">
-{% assign quiz_pages = site.pages | where_exp: "p", "p.path contains 'quizzes/' and p.name != 'index.md'" | sort: "date" | reverse %}
+{% assign quiz_pages = site.pages | where_exp: "p", "p.path contains 'quizzes/'" | where_exp: "p", "p.name != 'index.md'" | sort: "date" | reverse %}
 {% for p in quiz_pages %}
   <li>
     <span class="post-meta">{{ p.date | date: "%b %-d, %Y" }}</span>

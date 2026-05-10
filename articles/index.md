@@ -6,7 +6,7 @@ article: false
 ---
 
 <ul class="post-list">
-{% assign article_pages = site.pages | where_exp: "p", "p.path contains 'articles/' and p.name != 'index.md'" | sort: "date" | reverse %}
+{% assign article_pages = site.pages | where_exp: "p", "p.path contains 'articles/'" | where_exp: "p", "p.name != 'index.md'" | sort: "date" | reverse %}
 {% for p in article_pages %}
   <li>
     <span class="post-meta">{{ p.date | date: "%b %-d, %Y" }}{% assign a = p.author | default: "" | strip %}{% if a != "" %} · By {{ a }}{% endif %}</span>
