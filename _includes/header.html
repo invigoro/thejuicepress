@@ -2,7 +2,8 @@
 
   <div class="wrapper">
     {%- assign non_articles = site.pages | where_exp: "item", "item.article != true" -%}
-    {%- assign default_paths = non_articles | where_exp: "item", "item.header_exclude != true" | map: "path" -%}
+    {%- assign non_quizzes = non_articles | where_exp: "item", "item.quiz != true" -%}
+    {%- assign default_paths = non_quizzes | where_exp: "item", "item.header_exclude != true" | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 

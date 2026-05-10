@@ -1,0 +1,209 @@
+{
+  "quizId": 1,
+  "urlShortCode": "NOQWATX4ZQ",
+  "title": "Do You Want the Good News or the Bad News?",
+  "introHtml": "<p>Hey... you may want to sit down. It's not all bad though, there's some good news too.</p>",
+  "randomQuestionOrder": false,
+  "questions": [
+    {
+      "id": "1",
+      "order": 0,
+      "prompt": "I'm not gonna lie, it's pretty bad. You might want to start with the good news.",
+      "answers": [
+        {
+          "id": "1",
+          "label": "Fine. What's the good news?",
+          "weights": {
+            "2": 90,
+            "1": 0
+          }
+        },
+        {
+          "id": "2",
+          "label": "Just tell me.",
+          "weights": {
+            "1": 60,
+            "2": 40
+          }
+        },
+        {
+          "id": "16",
+          "label": "I'm bad with decisions. You choose which one to tell me first.",
+          "weights": {
+            "1": 30,
+            "2": 70
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "order": 1,
+      "prompt": "I really think you're gonna be happier in the long run if you hear the good news first.",
+      "answers": [
+        {
+          "id": "3",
+          "label": "Fine. Tell me.",
+          "weights": {
+            "2": 80,
+            "1": 25
+          }
+        },
+        {
+          "id": "4",
+          "label": "You tell me right now. I need to know how bad it is.",
+          "weights": {
+            "1": 90,
+            "2": 40
+          }
+        },
+        {
+          "id": "17",
+          "label": "You know, I think I would like the good news.",
+          "weights": {
+            "1": 0,
+            "2": 80
+          }
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "order": 2,
+      "prompt": "To be perfectly candid, it's really fucking bad. Let's just start with the good news, alright?",
+      "answers": [
+        {
+          "id": "8",
+          "label": "I need to get this over with. What's the bad news?",
+          "weights": {
+            "1": 50,
+            "2": 40
+          }
+        },
+        {
+          "id": "9",
+          "label": "Fine. This better be some fucking good news.",
+          "weights": {
+            "1": 30,
+            "2": 70
+          }
+        },
+        {
+          "id": "10",
+          "label": "I'm in a good mood. I think I'd like the good news first.",
+          "weights": {
+            "1": 0,
+            "2": 100
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "order": 3,
+      "prompt": "Why not just sit down, relax, have a beer. We can get to the bad news in a bit, but right now, why not something to cheer you up?",
+      "answers": [
+        {
+          "id": "5",
+          "label": "Jesus fucking Christ, just tell me the bad news already.",
+          "weights": {
+            "1": 80,
+            "2": 20
+          }
+        },
+        {
+          "id": "6",
+          "label": "Fuck you.",
+          "weights": {
+            "1": 0,
+            "2": 30
+          }
+        },
+        {
+          "id": "7",
+          "label": "I already said I'm fine with the good news first.",
+          "weights": {
+            "1": 0,
+            "2": 80
+          }
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "order": 4,
+      "prompt": "Seriously, though. You should seriously consider hearing the good news first. It'll make what I have to tell you so much easier.",
+      "answers": [
+        {
+          "id": "13",
+          "label": "Again, I would like to reiterate that I am fine hearing whatever the good thing you have to say is first.",
+          "weights": {
+            "1": 0,
+            "2": 80
+          }
+        },
+        {
+          "id": "14",
+          "label": "Is this a fucking game to you?",
+          "weights": {
+            "1": 70,
+            "2": 30
+          }
+        },
+        {
+          "id": "18",
+          "label": "I have no preference. I can see the merit in either option. I will leave the decision in your capable hands.",
+          "weights": {
+            "1": 25,
+            "2": 75
+          }
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "order": 5,
+      "prompt": "Last chance... the bad news 👎😟 ...or  the good news 👍😁?",
+      "answers": [
+        {
+          "id": "11",
+          "label": "I will kill you and your fucking family. You have truly reached the end of my patience. I hope this bullshit barrage of questions you have tormented me with while keeping me in anguished suspense was fucking worth it, you worthless piece of shit.",
+          "weights": {
+            "1": 100,
+            "2": 0
+          }
+        },
+        {
+          "id": "12",
+          "label": "Good news, please.",
+          "weights": {
+            "1": 0,
+            "2": 100
+          }
+        },
+        {
+          "id": "15",
+          "label": "I am indifferent.",
+          "weights": {
+            "1": 30,
+            "2": 70
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": 1,
+      "slug": "you-want-the-bad-news",
+      "title": "You Want the Bad News",
+      "contentHtml": "<p>Man, you&#x27;re really insistent. Alright, but don&#x27;t say I didn&#x27;t warn you.</p>"
+    },
+    {
+      "id": 2,
+      "slug": "you-want-the-good-news",
+      "title": "You Want the Good News",
+      "contentHtml": "<p>I think you made the right choice. This should really help put the bad news in perspective.</p>"
+    }
+  ]
+}

@@ -19,3 +19,16 @@ Welcome to **The Juice Press** — a satirical news archive.
   </li>
 {% endfor %}
 </ul>
+
+## Quizzes
+
+<ul class="post-list">
+{% assign quiz_pages = site.pages | where_exp: "p", "p.path contains 'quizzes/'" | sort: "title" %}
+{% for p in quiz_pages %}
+  <li>
+    <h3>
+      <a class="post-link" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </h3>
+  </li>
+{% endfor %}
+</ul>

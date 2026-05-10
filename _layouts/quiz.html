@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="quiz-page post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    {% if page.date %}
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
+    {% endif %}
+  </header>
+
+  {% assign quiz_payload = site.data.quizzes[page.quiz_data_key] %}
+  <script id="quiz-data" type="application/json">{{ quiz_payload | jsonify }}</script>
+  <div id="quiz-app" class="quiz-app" aria-live="polite"></div>
+</article>
+
+<script src="{{ '/assets/js/quiz.js' | relative_url }}" defer></script>

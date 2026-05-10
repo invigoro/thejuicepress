@@ -32,6 +32,13 @@ defaults:
       layout: post
       article: true
       permalink: "/articles/:basename/"
+  - scope:
+      path: "quizzes"
+    values:
+      layout: quiz
+      quiz: true
+      header_exclude: true
+      permalink: "/quizzes/:basename/"
 
 exclude:
   - Gemfile

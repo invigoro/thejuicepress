@@ -1,0 +1,421 @@
+{
+  "quizId": 2,
+  "urlShortCode": "HT51C4CS9V",
+  "title": "What Actor Best Matches Your Personality?",
+  "introHtml": "<p>There are hundreds of famous actors that we hear about every day, but which one's personality most closely matches yours?</p>",
+  "randomQuestionOrder": true,
+  "questions": [
+    {
+      "id": "7",
+      "order": 0,
+      "prompt": "Who is your least favorite president?",
+      "answers": [
+        {
+          "id": "19",
+          "label": "Franklin Pierce",
+          "weights": {
+            "3": 0,
+            "4": 5,
+            "5": 0,
+            "6": 0
+          }
+        },
+        {
+          "id": "20",
+          "label": "Millard Fillmore",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 5,
+            "6": 0
+          }
+        },
+        {
+          "id": "21",
+          "label": "Abraham Lincoln",
+          "weights": {
+            "3": 100,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          }
+        },
+        {
+          "id": "22",
+          "label": "Zachary Taylor",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "order": 1,
+      "prompt": "What's your favorite food?",
+      "answers": [
+        {
+          "id": "23",
+          "label": "Pizza",
+          "weights": {
+            "3": 0,
+            "4": 5,
+            "5": 0,
+            "6": 0
+          }
+        },
+        {
+          "id": "24",
+          "label": "Hamburgers",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 5
+          }
+        },
+        {
+          "id": "25",
+          "label": "Ice Cream",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 5,
+            "6": 0
+          }
+        },
+        {
+          "id": "26",
+          "label": "Revenge",
+          "weights": {
+            "3": 100,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "order": 2,
+      "prompt": "Who's your favorite Teenage Mutant Ninja Turtle?",
+      "answers": [
+        {
+          "id": "27",
+          "label": "Leonardo",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 5,
+            "6": 0
+          }
+        },
+        {
+          "id": "30",
+          "label": "Donatello",
+          "weights": {
+            "3": 0,
+            "4": 5,
+            "5": 0,
+            "6": 0
+          }
+        },
+        {
+          "id": "29",
+          "label": "Raphael",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 5
+          }
+        },
+        {
+          "id": "28",
+          "label": "Marcus Junius Brutus",
+          "weights": {
+            "4": 0,
+            "3": 100,
+            "5": 0,
+            "6": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "order": 3,
+      "prompt": "What state motto do you live by?",
+      "answers": [
+        {
+          "id": "31",
+          "label": "\"Wisdom, Justice, Moderation\" (Florida)",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 5,
+            "6": 0
+          }
+        },
+        {
+          "id": "33",
+          "label": "\"Sic semper tyrannus\" (Virginia)",
+          "weights": {
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "3": 100
+          }
+        },
+        {
+          "id": "32",
+          "label": "\"Excelsior!\" (New York)",
+          "weights": {
+            "3": 0,
+            "4": 5,
+            "5": 0,
+            "6": 0
+          }
+        },
+        {
+          "id": "34",
+          "label": "\"Virtute et armis\" (Mississippi)",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "order": 4,
+      "prompt": "What's your favorite holiday?",
+      "answers": [
+        {
+          "id": "35",
+          "label": "Christmas",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "6": 5,
+            "5": 0
+          }
+        },
+        {
+          "id": "36",
+          "label": "Halloween",
+          "weights": {
+            "3": 0,
+            "5": 5,
+            "6": 0,
+            "4": 5
+          }
+        },
+        {
+          "id": "37",
+          "label": "4th of July",
+          "weights": {
+            "3": 0,
+            "4": 5,
+            "5": 5,
+            "6": 0
+          }
+        },
+        {
+          "id": "38",
+          "label": "Good Friday",
+          "weights": {
+            "3": 100,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "order": 5,
+      "prompt": "If you could have any super power, what would it be?",
+      "answers": [
+        {
+          "id": "39",
+          "label": ".41 Caliber Deringer Pistol",
+          "weights": {
+            "3": 100,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          }
+        },
+        {
+          "id": "40",
+          "label": "Flight",
+          "weights": {
+            "3": 0,
+            "4": 5,
+            "5": 0,
+            "6": 0
+          }
+        },
+        {
+          "id": "41",
+          "label": "Super strength",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 5,
+            "6": 0
+          }
+        },
+        {
+          "id": "42",
+          "label": "Teleportation",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 5,
+            "6": 0
+          }
+        },
+        {
+          "id": "43",
+          "label": "Telepathy",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "order": 6,
+      "prompt": "Favorite line from \"The Avengers\"",
+      "answers": [
+        {
+          "id": "44",
+          "label": "\"You people are so petty... and tiny!\"",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 5,
+            "6": 5
+          }
+        },
+        {
+          "id": "45",
+          "label": "\"I understood that reference!\"",
+          "weights": {
+            "3": 0,
+            "4": 5,
+            "5": 5,
+            "6": 0
+          }
+        },
+        {
+          "id": "46",
+          "label": "\"I have done it, the South is avenged!\"",
+          "weights": {
+            "3": 100,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          }
+        },
+        {
+          "id": "47",
+          "label": "\"I can do this all day.\"",
+          "weights": {
+            "3": 0,
+            "4": 5,
+            "5": 0,
+            "6": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "order": 7,
+      "prompt": "What would be the best way to die?",
+      "answers": [
+        {
+          "id": "48",
+          "label": "Peacefully, in my sleep, of old age.",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 5
+          }
+        },
+        {
+          "id": "49",
+          "label": "Doing something with an adrenaline rush, like skydiving.",
+          "weights": {
+            "3": 0,
+            "4": 0,
+            "5": 5,
+            "6": 0
+          }
+        },
+        {
+          "id": "50",
+          "label": "Heroically so that I will be remembered for it.",
+          "weights": {
+            "3": 0,
+            "4": 5,
+            "5": 0,
+            "6": 0
+          }
+        },
+        {
+          "id": "51",
+          "label": "Shot to death inside a burning barn.",
+          "weights": {
+            "3": 100,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": 4,
+      "slug": "ryan-gosling",
+      "title": "Ryan Gosling",
+      "contentHtml": "<p>You&#x27;re most like Ryan Gosling! While an accomplished actor, Ryan Gosling has sadly never had the opportunity to assassinate President Abraham Lincoln.</p>"
+    },
+    {
+      "id": 3,
+      "slug": "john-wilkes-booth",
+      "title": "John Wilkes Booth",
+      "contentHtml": "<p>Congratulations! Your personality is most like John Wilkes Booth!\\r\\n\\r\\nBooth was the child of two noted British Shakespearean actors, Junius Brutus Booth and Mary Ann Holmes. Booth made his stage debut at the age of 17 in the supporting role of the Earl of Richmond in &quot;Richard III&quot; at Baltimore&#x27;s Charles Street Theatre.  Booth has been called &quot;the handsomest man in America&quot; and a &quot;natural genius&quot; by critics, and is noted for having an &quot;astonishing memory.&quot; George Alfred Townsend described him as a &quot;muscular, perfect man.&quot; Now that&#x27;s something to be proud of!</p>"
+    },
+    {
+      "id": 6,
+      "slug": "sam-neill",
+      "title": "Sam Neill",
+      "contentHtml": "<p>Nice! You&#x27;re Sam Neill.\\r\\nAn Irish actor whose résumé includes such famous films as &quot;Jurassic Park&quot; and &quot;Omen III: The Final Conflict&quot;, Sam Neill has had an incredible acting career spanning five decades. Sadly, he never had the opportunity to act in the widely acclaimed stage play &quot;Our American Cousin.&quot;</p>"
+    },
+    {
+      "id": 5,
+      "slug": "brad-pitt",
+      "title": "Brad Pitt",
+      "contentHtml": "<p>You&#x27;re most like Brad Pitt! Brad Pitt has been named People Magazine&#x27;s Sexiest Man Alive multiple times, but he sadly has never been referred to as a &quot;muscular, perfect man&quot; by George Alfred Townsend.</p>"
+    }
+  ]
+}
