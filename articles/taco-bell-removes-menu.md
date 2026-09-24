@@ -2,7 +2,7 @@
 title: Taco Bell Removes Menu
 date: 2020-10-08
 article_id: 9
-author: ''
+author: 'Timothy Wells'
 image: https://image.cnbcfm.com/api/v1/image/107408345-1714498561917-gettyimages-1945793217-1006_32_nc230605111.jpeg
 redirect_from:
 - /articles/h9gzkzig65/
