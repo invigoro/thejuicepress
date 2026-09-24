@@ -184,6 +184,68 @@
   }
 }
 
+.post-share {
+  margin-top: $spacing-unit;
+}
+
+.button {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid $brand-color;
+  background: $brand-color;
+  color: #fff;
+
+  &:hover {
+    background: darken($brand-color, 8%);
+  }
+}
+
+.button-secondary {
+  background: $background-color;
+  color: $brand-color;
+
+  &:hover {
+    background: lighten($brand-color, 42%);
+  }
+}
+
+.share-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+
+  // display: flex would otherwise override the hidden attribute
+  &[hidden] {
+    display: none;
+  }
+}
+
+.share-link {
+  font: inherit;
+  font-size: $small-font-size;
+  line-height: 1.4;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid $grey-color-light;
+  border-radius: 999px;
+  background: $background-color;
+  color: $text-color;
+  cursor: pointer;
+
+  &:visited {
+    color: $text-color;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: $brand-color;
+    color: $brand-color;
+    text-decoration: none;
+  }
+}
+
 .quiz-page {
   .quiz-intro {
     margin-bottom: 1.5rem;
@@ -250,22 +312,10 @@
     margin-bottom: 0;
   }
 
-  .quiz-retake-wrap {
+  .quiz-outcome-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     margin-top: 1.25rem;
-    margin-bottom: 0;
-  }
-
-  .quiz-retake-button {
-    font: inherit;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    border: 1px solid $brand-color;
-    background: $brand-color;
-    color: #fff;
-
-    &:hover {
-      background: darken($brand-color, 8%);
-    }
   }
 }

@@ -104,7 +104,7 @@
     return best;
   }
 
-  function renderResult(parent, res, showRetake) {
+  function renderResult(parent, cfg, res, finished) {
     var prev = parent.querySelector("#quiz-outcome");
     if (prev) prev.remove();
     var wrap = el("div", { className: "quiz-outcome", id: "quiz-outcome" });
@@ -112,20 +112,31 @@
     var body = el("div", { className: "quiz-outcome-body" });
     body.innerHTML = res.contentHtml || "";
     wrap.appendChild(body);
-    if (showRetake) {
-      var p = el("p", { className: "quiz-retake-wrap" });
-      var btn = el("button", {
-        type: "button",
-        className: "quiz-retake-button",
-        text: "Take the quiz",
+
+    var actions = el("div", { className: "quiz-outcome-actions" });
+    var share = null;
+    if (finished && window.juicePressShare) {
+      share = window.juicePressShare({
+        label: "Share my results",
+        url: window.location.origin + window.location.pathname + "#" + encodeURIComponent(res.slug),
+        text: 'I got "' + res.title + '" on "' + cfg.title + '"',
+        title: cfg.title,
       });
-      btn.addEventListener("click", function () {
-        clearHash();
-        window.location.reload();
-      });
-      p.appendChild(btn);
-      wrap.appendChild(p);
+      actions.appendChild(share.button);
     }
+    var retakeBtn = el("button", {
+      type: "button",
+      className: finished ? "button button-secondary" : "button",
+      text: finished ? "Retake quiz" : "Take the quiz",
+    });
+    retakeBtn.addEventListener("click", function () {
+      clearHash();
+      window.location.reload();
+    });
+    actions.appendChild(retakeBtn);
+    wrap.appendChild(actions);
+    if (share) wrap.appendChild(share.panel);
+
     parent.appendChild(wrap);
     wrap.scrollIntoView({ behavior: "smooth", block: "start" });
   }
@@ -139,7 +150,7 @@
       );
       return;
     }
-    renderResult(mount, res, true);
+    renderResult(mount, cfg, res, false);
   }
 
   function runInteractive(cfg, mount) {
@@ -183,7 +194,7 @@
 
           var winner = computeWinner(cfg, selections);
           setHashSlug(winner.slug);
-          renderResult(mount, winner, true);
+          renderResult(mount, cfg, winner, true);
         });
         opts.appendChild(b);
       });

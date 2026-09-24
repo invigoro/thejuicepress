@@ -23,6 +23,7 @@ layout: default
 
   <script id="quiz-data" type="application/json">
     {
+      "title": {{ page.title | jsonify }},
       "shuffleQuestions": {{ page.shuffle_questions | default: false | jsonify }},
       "questions": {{ page.questions | jsonify }},
       "results": [
@@ -36,4 +37,5 @@ layout: default
   <div id="quiz-app" class="quiz-app" aria-live="polite"></div>
 </article>
 
+<script src="{{ '/assets/js/share.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/quiz.js' | relative_url }}" defer></script>
