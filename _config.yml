@@ -25,6 +25,9 @@ minima:
 
 markdown: kramdown
 
+# Fail the build on a front matter typo instead of publishing the page without its data
+strict_front_matter: true
+
 defaults:
   - scope:
       path: "articles"

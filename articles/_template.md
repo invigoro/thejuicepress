@@ -8,6 +8,8 @@
 #    itself contains a double quote, type it as \"
 # 3. Replace the example text after the closing "---" with your article,
 #    written in Markdown.
+# A typo in this top section makes the site build fail, and GitHub will show
+# the build as failed until it's fixed.
 # These notes never appear on the site; delete them if you like.
 title: "Local Writer Fills Out Template, Forgets to Change Headline"
 date: 2026-09-24   # publication date (YYYY-MM-DD); the newest article is featured on the home page

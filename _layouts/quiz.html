@@ -14,8 +14,25 @@ layout: default
     {% endif %}
   </header>
 
-  {% assign quiz_payload = site.data.quizzes[page.quiz_data_key] %}
-  <script id="quiz-data" type="application/json">{{ quiz_payload | jsonify }}</script>
+  {% assign intro = content | strip %}
+  {% if intro != "" %}
+  <section class="quiz-intro">
+    {{ intro }}
+  </section>
+  {% endif %}
+
+  <script id="quiz-data" type="application/json">
+    {
+      "shuffleQuestions": {{ page.shuffle_questions | default: false | jsonify }},
+      "questions": {{ page.questions | jsonify }},
+      "results": [
+        {%- for r in page.results -%}
+        {"slug": {{ r.slug | jsonify }}, "title": {{ r.title | jsonify }}, "contentHtml": {{ r.text | markdownify | jsonify }}}
+        {%- unless forloop.last -%},{%- endunless -%}
+        {%- endfor -%}
+      ]
+    }
+  </script>
   <div id="quiz-app" class="quiz-app" aria-live="polite"></div>
 </article>
 

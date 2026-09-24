@@ -61,17 +61,16 @@
     }
   }
 
-  function allQuestionsAnswered(cfg, selections) {
-    for (var i = 0; i < cfg.questions.length; i++) {
-      var qid = cfg.questions[i].id;
-      if (!selections[qid]) return false;
+  function allQuestionsAnswered(questions, selections) {
+    for (var i = 0; i < questions.length; i++) {
+      if (!selections[i]) return false;
     }
     return true;
   }
 
   function scrollToFirstUnanswered(questions, selections) {
     for (var i = 0; i < questions.length; i++) {
-      if (!selections[questions[i].id]) {
+      if (!selections[i]) {
         var node = document.getElementById("quiz-q-" + i);
         if (node) node.scrollIntoView({ behavior: "smooth", block: "start" });
         return;
@@ -92,42 +91,17 @@
 
   function computeWinner(cfg, selections) {
     var scores = {};
-    cfg.results.forEach(function (r) {
-      scores[r.id] = 0;
-    });
-    cfg.questions.forEach(function (q) {
-      var aid = selections[q.id];
-      if (!aid) return;
-      var ans = null;
-      q.answers.forEach(function (a) {
-        if (String(a.id) === String(aid)) ans = a;
-      });
-      if (!ans || !ans.weights) return;
-      Object.keys(ans.weights).forEach(function (rid) {
-        var w = ans.weights[rid];
-        var id = parseInt(rid, 10);
-        if (!scores.hasOwnProperty(id)) scores[id] = 0;
-        scores[id] += w;
+    selections.forEach(function (ans) {
+      var points = ans.points || {};
+      Object.keys(points).forEach(function (slug) {
+        scores[slug] = (scores[slug] || 0) + points[slug];
       });
     });
-    var bestId = null;
-    var bestScore = -Infinity;
+    var best = cfg.results[0];
     cfg.results.forEach(function (r) {
-      var s = scores[r.id] || 0;
-      if (
-        bestId === null ||
-        s > bestScore ||
-        (s === bestScore && r.id < bestId)
-      ) {
-        bestScore = s;
-        bestId = r.id;
-      }
+      if ((scores[r.slug] || 0) > (scores[best.slug] || 0)) best = r;
     });
-    if (bestId == null) return cfg.results[0];
-    for (var j = 0; j < cfg.results.length; j++) {
-      if (cfg.results[j].id === bestId) return cfg.results[j];
-    }
-    return cfg.results[0];
+    return best;
   }
 
   function renderResult(parent, res, showRetake) {
@@ -156,13 +130,6 @@
     wrap.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  function renderIntro(container, cfg) {
-    if (!cfg.introHtml) return;
-    var intro = el("section", { className: "quiz-intro" });
-    intro.innerHTML = cfg.introHtml;
-    container.appendChild(intro);
-  }
-
   function runSharedResultView(cfg, mount, slug) {
     mount.innerHTML = "";
     var res = findResultBySlug(cfg, slug);
@@ -172,26 +139,22 @@
       );
       return;
     }
-    renderIntro(mount, cfg);
     renderResult(mount, res, true);
   }
 
   function runInteractive(cfg, mount) {
     var questions = cfg.questions.slice();
-    if (cfg.randomQuestionOrder) {
+    if (cfg.shuffleQuestions) {
       questions = shuffle(questions);
     }
 
-    renderIntro(mount, cfg);
-
-    var selections = {};
+    var selections = [];
     var formWrap = el("div", { className: "quiz-questions" });
 
     questions.forEach(function (q, idx) {
       var sec = el("section", {
         className: "quiz-question",
         id: "quiz-q-" + idx,
-        "data-question-id": q.id,
       });
       sec.appendChild(el("h3", { className: "quiz-question-prompt", text: q.prompt }));
       var opts = el("div", { className: "quiz-answers", role: "group" });
@@ -199,17 +162,16 @@
         var b = el("button", {
           type: "button",
           className: "quiz-answer-button",
-          "data-answer-id": a.id,
           text: a.label,
         });
         b.addEventListener("click", function () {
-          selections[q.id] = String(a.id);
+          selections[idx] = a;
           opts.querySelectorAll(".quiz-answer-button").forEach(function (btn) {
             btn.classList.remove("is-selected");
           });
           b.classList.add("is-selected");
 
-          if (!allQuestionsAnswered(cfg, selections)) {
+          if (!allQuestionsAnswered(questions, selections)) {
             if (idx < questions.length - 1) {
               var next = document.getElementById("quiz-q-" + (idx + 1));
               if (next) next.scrollIntoView({ behavior: "smooth", block: "start" });
