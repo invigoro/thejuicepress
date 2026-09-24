@@ -2,7 +2,7 @@
 title: Millions Receive Amber Alert for Nemo in New Multi-Channel Marketing Strategy
 date: 2021-07-21
 article_id: 13
-author: ''
+author: 'Timothy Wells'
 image: https://townsquare.media/site/442/files/2012/07/nemo-2.jpg
 redirect_from:
 - /articles/toozep87ki/
