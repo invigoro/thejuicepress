@@ -9,7 +9,7 @@ quiz: false
 {% assign quiz_pages = site.pages | where_exp: "p", "p.path contains 'quizzes/'" | where_exp: "p", "p.name != 'index.md'" | sort: "date" | reverse %}
 {% for p in quiz_pages %}
   <li>
-    <span class="post-meta">{{ p.date | date: "%b %-d, %Y" }}</span>
+    <span class="post-meta">{{ p.date | date: "%b %-d, %Y" }}{% assign a = p.author | default: "" | strip %}{% if a != "" %} · By {{ a }}{% endif %}</span>
     <h3>
       <a class="post-link" href="{{ p.url | relative_url }}">{{ p.title }}</a>
     </h3>

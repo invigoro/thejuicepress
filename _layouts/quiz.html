@@ -4,8 +4,13 @@ layout: default
 <article class="quiz-page post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
-    {% if page.date %}
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
+    {% assign author_display = page.author | default: "" | strip %}
+    {% if page.date or author_display != "" %}
+    <p class="post-meta">
+      {%- if page.date -%}{{ page.date | date: "%b %-d, %Y" }}{%- endif -%}
+      {%- if page.date and author_display != "" -%}<span class="sep"> · </span>{%- endif -%}
+      {%- if author_display != "" -%}By {{ author_display | escape }}{%- endif -%}
+    </p>
     {% endif %}
   </header>
 
