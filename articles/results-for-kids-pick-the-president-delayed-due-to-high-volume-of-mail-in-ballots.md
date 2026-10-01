@@ -1,4 +1,5 @@
 ---
+published: true
 title: Results for "Kids Pick the President" Delayed Due to High Volume of Mail-In Ballots
 date: 2020-11-04
 article_id: 12

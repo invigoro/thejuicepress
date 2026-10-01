@@ -1,4 +1,5 @@
 ---
+published: true
 title: "What Actor Best Matches Your Personality?"
 date: 2020-09-28
 author: "Timothy Wells"

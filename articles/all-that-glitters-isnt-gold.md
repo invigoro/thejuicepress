@@ -1,4 +1,5 @@
 ---
+published: true
 title: All that Glitters isn’t Gold
 date: 2020-10-10
 article_id: 10

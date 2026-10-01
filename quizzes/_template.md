@@ -5,6 +5,9 @@
 #    Don't start the name with "_": Jekyll skips those files, which is why this
 #    template never gets a page of its own.
 # 2. Fill in the fields below, then replace the intro after the closing "---".
+# 3. While "published" is false the quiz is a draft: commit it as often as you
+#    like and it stays off the site. Change it to true to publish it.
+#    See README.md for the full workflow.
 #
 # How it works:
 # - Each result has a "slug" (lowercase words joined by hyphens) that names it.
@@ -21,6 +24,7 @@
 #   A typo up here makes the site build fail, and GitHub will show the build as
 #   failed until it's fixed.
 # These notes never appear on the site; delete them if you like.
+published: false           # true puts the quiz on the site
 title: "Which Juice Are You?"
 date: 2026-09-24           # publication date (YYYY-MM-DD)
 author: "Your Name"

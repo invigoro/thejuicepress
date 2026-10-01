@@ -1,4 +1,5 @@
 ---
+published: true
 title: 10 Things You'll Only Understand If You Speak Spanish
 date: 2020-09-26
 article_id: 6

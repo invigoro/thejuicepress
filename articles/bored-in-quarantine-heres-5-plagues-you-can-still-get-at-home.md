@@ -1,4 +1,5 @@
 ---
+published: true
 title: Bored in Quarantine? Here's 5 Plagues You Can Still Get At Home
 date: 2020-08-19
 article_id: 3

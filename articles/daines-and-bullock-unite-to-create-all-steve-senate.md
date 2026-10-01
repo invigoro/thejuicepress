@@ -1,4 +1,5 @@
 ---
+published: true
 title: Daines and Bullock Unite to Create "All Steve Senate"
 date: 2020-11-01
 article_id: 11

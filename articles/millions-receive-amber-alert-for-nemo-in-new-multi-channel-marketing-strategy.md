@@ -1,4 +1,5 @@
 ---
+published: true
 title: Millions Receive Amber Alert for Nemo in New Multi-Channel Marketing Strategy
 date: 2021-07-21
 article_id: 13

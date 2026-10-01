@@ -8,9 +8,12 @@
 #    itself contains a double quote, type it as \"
 # 3. Replace the example text after the closing "---" with your article,
 #    written in Markdown.
+# 4. While "published" is false the article is a draft: commit it as often as
+#    you like and it stays off the site. Change it to true to publish it.
 # A typo in this top section makes the site build fail, and GitHub will show
-# the build as failed until it's fixed.
+# the build as failed until it's fixed. See README.md for the full workflow.
 # These notes never appear on the site; delete them if you like.
+published: false   # true puts the article on the site
 title: "Local Writer Fills Out Template, Forgets to Change Headline"
 date: 2026-09-24   # publication date (YYYY-MM-DD); the newest article is featured on the home page
 author: "Your Name"

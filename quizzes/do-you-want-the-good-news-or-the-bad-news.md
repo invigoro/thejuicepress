@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Do You Want the Good News or the Bad News?"
 date: 2020-09-27
 author: "Timothy Wells"

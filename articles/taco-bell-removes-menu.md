@@ -1,4 +1,5 @@
 ---
+published: true
 title: Taco Bell Removes Menu
 date: 2020-10-08
 article_id: 9
